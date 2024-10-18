@@ -1,2 +1,3 @@
 #!/bin/bash
-cat | sort --ignore-case | uniq -u
+while read -r word; do [[ -n $word ]] && echo "$word"; done | sort | uniq -
+
