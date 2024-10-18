@@ -1,3 +1,2 @@
 #!/bin/bash
-while read -r word; do [[ -n $word ]] && echo "$word"; done | sort | uniq -
-
+while read -r word; do [[ -n $word ]] echo "$word"; done | sort | uniq -
